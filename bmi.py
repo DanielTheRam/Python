@@ -30,7 +30,5 @@ elif bmi <= 29.9:
 elif bmi >= 30:
     print(hlaska_bmi, obezita)
     
-
-
 # f string - dohledat
 # více řádkový string
