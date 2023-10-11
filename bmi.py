@@ -14,7 +14,7 @@ norma =     """Vase vaha je v norme
 nadvaha =   """Mate nadvahu, zacnete se vice hybat
                Omezte vysokokaloricka jidla
                Vyhybejte se piti slazenych napoju
-               Nastavte si zdravy spankovy rezim"""
+               Nastavte si zdravy spankovy rezim"""                 #vložit hlaska_bmi a kategorii pod jeden f string
 obezita =   """Vyhledejte sveho obvodniho lekare
                Vynechte vysokokaloricka jidla a slazene napoje
                Zaradte pohyb do vaseho denniho rezimu
