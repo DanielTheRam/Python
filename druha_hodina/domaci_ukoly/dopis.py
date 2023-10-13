@@ -3,15 +3,13 @@ name = input("Napište své jméno ")
 surname = input("Napište své příjmení ")
 recipient = input("Napište jméno příjemce ")
 sex = input("Zadejte pohlaví příjemce - Muž/Žena ")
-company = input("Zadejte název společnosti")
+company = input("Zadejte název společnosti ")
 date = datetime.date.today()
 
 if sex == "Muž":
     adressing = "Vážený pane"
 elif sex == "Žena":
     adressing = "Vážená paní"
-else: 
-    print("špatně zadané pohlaví")
 dopis = f"""
 {adressing} {recipient}
 
@@ -32,4 +30,4 @@ S odpovědí moc dlouho nečekejte. O člověka jako mě se firmy velmi perou.
 {name} {surname}
 {date}
 """
-print(dopis)
+print(dopis)        #přidat try/catch

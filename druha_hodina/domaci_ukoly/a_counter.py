@@ -6,4 +6,4 @@ for a in veta:
     elif a == "á":
         pocet_znaku += 1
 vysledek = f"Počet 'a' ve vaší větě je {pocet_znaku}"
-print(vysledek)
+print(vysledek)         #velká písmena - ignorovat velikost písmen

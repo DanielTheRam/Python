@@ -1,18 +1,15 @@
 import random
 kostka = (1,2,3,4,5,6)
-konec_hry = True
-while konec_hry:
-    input("Napište 'hod' pro začátek hry: ")
+while True:
+    input("Napište 'hod'  začátek hry: ")       # hod - aby hod opravdu něco dělal (zapl/vypl hru)
     pocitac = random.choice(kostka)
     hrac = random.choice(kostka)
-
     print("Hráč hodil:", hrac)
-    print("Počítač hodil:", pocitac)
+    print("Počítač hodil:", pocitac)        # jeden fstring
     if hrac > pocitac:
         print("Vyhrals!")
-        konec_hry = False
+        quit()                  #forcuje vypnutí skriptu (jen u while cyklu)
     elif hrac < pocitac:
         print("Prohrals!")
-        konec_hry = True
-    elif hrac == pocitac:
-        print("Nerozhodně, hrajte znovu")
+    else:
+        print("Remíza")         
