@@ -1,8 +1,8 @@
-import random                           #toto a 5. radek jsem jediny googlil, konvence se píší na první řádek
+from random import choice                    #vybral jsem si pouze jednu metodu z více metod knihovny random
 
 moznosti = ("kamen", "nuzky", "papir")
 hrac = input("napiste 'kamen', 'nuzky', nebo 'papir': ")
-pocitac = random.choice(moznosti)
+pocitac = choice(moznosti)
 print(pocitac)
 
 if hrac == "kamen" and pocitac == "nuzky":
@@ -20,4 +20,5 @@ elif hrac == "papir" and pocitac == "nuzky":
 elif hrac == pocitac:
     print("remiza - oba jste zvolili stejnou moznost")
 else:
-    print("spatny vyraz")
+    print("spatny vyraz")               #knihovny - (př. random) - má třeba 50 metod, tj. zbytečně složité
+
