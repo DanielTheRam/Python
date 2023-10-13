@@ -25,4 +25,4 @@ elif hrac == "papir" and pocitac == "nuzky":
 elif hrac == "papor" and pocitac == "papir":
     print("remiza")
 else:
-    print("spatny vyraz")
+    print("spatny vyraz")               
