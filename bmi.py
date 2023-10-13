@@ -29,4 +29,4 @@ elif bmi <= 29.9:
     print(hlaska_bmi, nadvaha)
 elif bmi >= 30:
     print(hlaska_bmi, obezita)
-    
+#novy radek
