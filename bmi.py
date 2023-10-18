@@ -3,30 +3,32 @@ vaha = float(input("zadej svoji hmotnost(v kg)"))
 vyska = float(input("zadej svoji vysku (v m)"))
 vyska_na_druhou = (vyska * vyska) 
 bmi = vaha / vyska_na_druhou               #pokud chceme BMI s desetinným místem, napíšeme float místo int
-hlaska_bmi = f"Vase bmi je {bmi}"           # jen jednu proměnnou
-podvaha =   """Mate podvahu, zacnete vice jist
+podvaha =   f"""Vaše BMI je {bmi}.
+               Mate podvahu, zacnete vice jist
                Spocitejte si doporuceny denni kaluricky prijem
                Jezte pravidelne a alespon 5x denne
                Neopominejte dostatecny a kvalitni spanek"""
-norma =     """Vase vaha je v norme
+norma =     f"""Vaše BMI je {bmi}.
+               Vase vaha je v norme
                Dodrzujte pravidelny pohyb, stravovaci navyky
                Nezapominejte na zdravy spankovy rezim"""
-nadvaha =   """Mate nadvahu, zacnete se vice hybat
+nadvaha =   f"""Vaše BMI je {bmi}.
+               Mate nadvahu, zacnete se vice hybat
                Omezte vysokokaloricka jidla
                Vyhybejte se piti slazenych napoju
                Nastavte si zdravy spankovy rezim"""                 
-obezita =   """Vyhledejte sveho obvodniho lekare
+obezita =   f"""Vaše BMI je {bmi}.
+               Vyhledejte sveho obvodniho lekare
                Vynechte vysokokaloricka jidla a slazene napoje
                Zaradte pohyb do vaseho denniho rezimu
                Pravidelne spete alespon 8 hodin
                Nepijte alkohol a nekurte"""
 if bmi < 18.5:
-    print(hlaska_bmi, podvaha)
-
+    print(podvaha)
 elif bmi <= 24.9:
-    print(hlaska_bmi, norma)
+    print(norma)
 elif bmi <= 29.9:
-    print(hlaska_bmi, nadvaha)
+    print(nadvaha)
 elif bmi >= 30:
-    print(hlaska_bmi, obezita)
-#novy radek
+    print(obezita)
+
