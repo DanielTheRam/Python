@@ -6,7 +6,7 @@ druhe = int(input("druhe cislo: "))         #vezme vstup uzivatele, urci datovy 
 
 if operace == "+":                          #vezme hodnotu promenne a pokud je hodnota +
     vysledek = (prvni + druhe)
-    print(vysledek)                    #secte prvni a druhe promenne a vysledek vytiskne
+    print(vysledek)                         #secte prvni a druhe promenne a vysledek vytiskne
 elif operace == "-":  
     vysledek = (prvni - druhe)                      #vezme hodnotu promenne a pokud je hodnota -
     print(vysledek)                    
