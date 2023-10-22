@@ -32,7 +32,8 @@ while True:
                 gbook = input(f"Jakou knihu si chcete půjčit? {available_books} ")
                 if gbook in available_books:
                       users_books.add(gbook)
-                      gbook = available_books.pop(gbook)
+                      del available_books[gbook]
+                      borrowed_books[gbook] = name
                       print(f"Vaše půjčené knihy jsou: {users_books}")
                 else:
                       print("Tato kniha není k dispozici")
@@ -45,7 +46,7 @@ while True:
                         1 - Vaše půjčené knihy
                         2 - Zobrazit seznam dostupných knih 
                         3 - Vratit knihu 
-                        4 - Pujcit si knihu) """)
+                        4 - Pujcit si knihu """)
         if action =="1":
             if not users_books:
                 print("Nemáte žádnou půjčenou knihu")
@@ -74,4 +75,5 @@ while True:
                       print("Tato kniha není k dispozici")
         else:
             print("Špatně zadaný výraz")
-# zařadit admina i uživatele do seznamu půjčených knih  #4     
+# pokud si uživatel půjčí knihu, kterou poté vrátí, není odebrán ze seznamu půjčených knih
+# kdy používám del/pop/remote
