@@ -7,7 +7,7 @@ message = "Ahoj, světe!"
 print(len(message))  # Vypíše: 13 - všechny znaky ve stringu
 
 # Float
-# Floats nemají specifické metody pro bitové operace.
+# Floats nemají specifické metody pro bitové operace. Používají se při práci s čísly s desetinnými místy
 
 # Boolean
 is_python_fun = True
