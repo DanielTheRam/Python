@@ -1,8 +1,7 @@
-#bmi kalkulacka
 vaha = float(input("zadej svoji hmotnost(v kg)"))
 vyska = float(input("zadej svoji vysku (v m)"))
 vyska_na_druhou = (vyska * vyska) 
-bmi = vaha / vyska_na_druhou               #pokud chceme BMI s desetinným místem, napíšeme float místo int
+bmi = vaha / vyska_na_druhou               
 podvaha =   f"""Vaše BMI je {bmi}.
                Mate podvahu, zacnete vice jist
                Spocitejte si doporuceny denni kaluricky prijem

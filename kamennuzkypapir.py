@@ -1,10 +1,8 @@
-from random import choice                    #vybral jsem si pouze jednu metodu z více metod knihovny random
-
+from random import choice                    
 moznosti = ("kamen", "nuzky", "papir")
 hrac = input("napiste 'kamen', 'nuzky', nebo 'papir': ")
 pocitac = choice(moznosti)
 print(pocitac)
-
 if hrac == "kamen" and pocitac == "nuzky":
     print("vyhrals")
 elif hrac == "kamen" and pocitac == "papir":
@@ -20,5 +18,5 @@ elif hrac == "papir" and pocitac == "nuzky":
 elif hrac == pocitac:
     print("remiza - oba jste zvolili stejnou moznost")
 else:
-    print("spatny vyraz")               #knihovny - (př. random) - má třeba 50 metod, tj. zbytečně složité
+    print("spatny vyraz")
 
