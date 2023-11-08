@@ -10,14 +10,14 @@ if jazyk == "CZ":
         print(f"Anglický překlad je {preklad_aj} a italský je {preklad_it}")
     else:
         print("Slovo se nenachází ve slovníku")
-if jazyk == "ENG":
+elif jazyk == "ENG":
     if slovo in engit:
         preklad_it = engit[slovo]
         preklad_cz = itcz[preklad_it]
         print(f"Český překlad je {preklad_cz} a italský je {preklad_it}")
     else:
         print("Slovo se nenachází ve slovníku")
-if jazyk == "IT":
+elif jazyk == "IT":
     if slovo in itcz:
         preklad_cz = itcz[slovo]
         preklad_aj = czeng[preklad_cz] 
