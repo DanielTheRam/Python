@@ -1,8 +1,7 @@
-import random                                              
+from random import choice 
 moznosti = ("kamen", "nuzky", "papir")
 while True:
     hrac = input("napiste 'kamen', 'nuzky', nebo 'papir': ")
-    from random import choice 
     pocitac = choice(moznosti)
     print(pocitac)
     if hrac == "kamen" and pocitac == "nuzky":
